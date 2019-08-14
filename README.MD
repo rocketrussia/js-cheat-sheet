@@ -63,6 +63,10 @@ var person = {
 # Внимание
 Информация следующая далее находится в процессе перевода на русский язык
 
+```
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+```
+
 # Следующий уровень: Массивы
 Next up in our JavaScript cheat sheet are arrays. Arrays are part of many different programming languages. They are a way of organizing variables and properties into groups. Here’s how to create one in JavaScript:
 ```
