@@ -7,56 +7,61 @@ https://websitesetup.org/javascript-cheat-sheet/
 
 ## Добавление JavaScript на HTML страницу
 Чтобы подключить JavaScript к странице, следует обернуть JS-код в тег <script>:
-```<script type="text/javascript">
+```
+<script type="text/javascript">
 //JS code goes here
 </script>
 ```
 
 ## Вызываем JavaScript-фаил извне
 JavaScript код можно разместить в своем собственном файле и вызвать его изнутри HTML. Так делают, когда следует разделить скрипты, выполняющие разные функции, чтобы избежать путаницы. Если ваш код находится в файле с именем myscript.js, его можно подключить таким образом:
-```<script src="myscript.js"></script><code></code>```
+```
+<script src="myscript.js"></script><code></code>
+```
 
 ## Добавляем комментарии к коду
 Комментарии помогают понять, что происходит в вашем коде. Помните, что они должны быть помечены правильно, чтобы браузер не пытался их выполнить.
 
 JavaScript предлагает вам две опции:
-Однострочные комментарии - комментируют лишь одну строку с помощью ```//```
-Многострочные комментарии - если вы хотите написать более длинные комментарии, поместите их в ```/ *``` и ```* /```, чтобы избежать их выполнения браузером.
-
-# Внимание
-Информация следующая далее находится в процессе перевода на русский язык
+* Однострочные комментарии - комментируют лишь одну строку с помощью ```//```
+* Многострочные комментарии - если вы хотите написать более длинные комментарии, поместите их в ```/ *``` и ```* /```, чтобы избежать их выполнения браузером.
 
 # Переменные в JS
-Variables are stand-in values that you can use to perform operations. You should be familiar with them from math class.
+Переменная - зарезервированное место в памяти компьютера, которое можно использовать для сохранения некоторых данных и в последующем, выполнять нужные операций. Они могут быть вам знакомы со школьной скамьи. Как пример x, y, z использующиеся в уравнениях, в которые можно было подставить число для вычисления нужных значений.
 
 ## var, const, let
-You have three different possibilities for declaring a variable in JavaScript, each with their own specialties:
+У вас есть три различных способа объявления переменной в JavaScript, каждая из которых имеет свои особенности:
 
-var — The most common variable. Can be reassigned but only accessed within a function. Variables defined with var move to the top when the code is executed.
-const — Can not be reassigned and not accessible before they appear within the code.
-let — Similar to const, the let variable can be reassigned but not re-declared.
+* var — Переменная часто использующася в старых проектах. Может быть переназначена, но только внутри функции. Переменные типа ```var``` могут производить всплытие. Всплытие позволяет запускать объявленные функции выше, чем они объявлены в контексте функции.
+* const — Не может быть переназначена, объявленна повторно и не подвержена всплытию.
+* let — В отличии от ```const```, переменная ```let``` может быть переназначена, но не может быть объявлена повторно и тоже не подвержена всплытию.
 
 ## Типы данных
-Variables can contain different types of values and data types. You use = to assign them:
+Переменные могут содержать различные типы значений и типов данных. Используйте знак равенства ```=```, чтобы присвоить их:
 
-Numbers — var age = 23
-Variables — var x
-Text (strings) — var a = "init"
-Operations — var b = 1 + 2 + 3
-True or false statements — var c = true
-Constant numbers — const PI = 3.14
-Objects — var name = {firstName:"John", lastName:"Doe"}
-There are more possibilities. Note that variables are case sensitive. That means lastname and lastName will be handled as two different variables.
+* Numbers — ```var age = 23```
+* Variables — ```var x```
+* Text (strings) — ```var a = "init"```
+* Operations — ```var b = 1 + 2 + 3```
+* True or false statements — ```var c = true```
+* Constant numbers — ```const PI = 3.14```
+* Objects — ```var name = {firstName:"John", lastName:"Doe"}```
+
+Обратите внимание, что переменные чувствительны к регистру. Это означает, что ```lastname``` и ``` lastName``` будут обрабатываться как две разные переменные.
 
 ## Объекты
-Objects are certain kind of variables. They are variables which can have their own values and methods. The latter are actions that you can perform on objects.
-
+Объекты - определенный вид переменных, которые могут иметь свои собственные значения и методы. Последние являются действиями, которые вы можете совершать над объектами.
+```
 var person = {
     firstName:"John",
     lastName:"Doe",
     age:20,
     nationality:"German"
 };
+```
+
+# Внимание
+Информация следующая далее находится в процессе перевода на русский язык
 
 # Следующий уровень: Массивы
 Next up in our JavaScript cheat sheet are arrays. Arrays are part of many different programming languages. They are a way of organizing variables and properties into groups. Here’s how to create one in JavaScript:
