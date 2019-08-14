@@ -138,25 +138,25 @@ As you can see, it consists the ```function``` keyword plus a name. The function
 ## Outputting Data
 A common application for functions is the output of data. For the output, you have the following options:
 
-```alert()``` — Output data in an alert box in the browser window
-```confirm()``` — Opens up a yes/no dialog and returns true/false depending on user click
-```console.log()``` — Writes information to the browser console, good for debugging purposes
-```document.write()``` — Write directly to the HTML document
-```prompt()``` — Creates a dialogue for user input
+* ```alert()``` — Output data in an alert box in the browser window
+* ```confirm()``` — Opens up a yes/no dialog and returns true/false depending on user click
+* ```console.log()``` — Writes information to the browser console, good for debugging purposes
+* ```document.write()``` — Write directly to the HTML document
+* ```prompt()``` — Creates a dialogue for user input
 
 ## Global Functions
 Global functions are functions built into every browser capable of running JavaScript.
 
-```decodeURI()``` — Decodes a [Uniform Resource Identifier](https://ru.wikipedia.org/wiki/URI "Википедия url") created by encodeURI or similar
-```decodeURIComponent()``` — Decodes a URI component
-```encodeURI()``` — Encodes a URI into UTF-8
-```encodeURIComponent()``` — Same but for URI components
-```eval()``` — Evaluates JavaScript code represented as a string
-```isFinite()``` — Determines whether a passed value is a finite number
-```isNaN()``` — Determines whether a value is NaN or not
-```Number()``` — Returns a number converted from its argument
-```parseFloat()``` — Parses an argument and returns a floating point number
-```parseInt()``` — Parses its argument and returns an integer
+* ```decodeURI()``` — Decodes a [Uniform Resource Identifier](https://ru.wikipedia.org/wiki/URI "Википедия url") created by encodeURI or similar
+* ```decodeURIComponent()``` — Decodes a URI component
+* ```encodeURI()``` — Encodes a URI into UTF-8
+* ```encodeURIComponent()``` — Same but for URI components
+* ```eval()``` — Evaluates JavaScript code represented as a string
+* ```isFinite()``` — Determines whether a passed value is a finite number
+* ```isNaN()``` — Determines whether a value is NaN or not
+* ```Number()``` — Returns a number converted from its argument
+* ```parseFloat()``` — Parses an argument and returns a floating point number
+* ```parseInt()``` — Parses its argument and returns an integer
 
 # JavaScript Loops
 Loops are part of most programming languages. They allow you to execute blocks of code desired number of times with different values:
@@ -167,62 +167,64 @@ for (before loop; condition for loop; execute after loop) {
 ```
 You have several parameters to create loops:
 
-```for``` — The most common way to create a loop in JavaScript
-```while``` — Sets up conditions under which aloop executes
-```do while``` — Similar to the ```while``` loop but it executes at least once and performs a check at the end to see if the condition is met to execute again
-```break``` —Used to stop and exit the cycle at certain conditions
-```continue``` — Skip parts of the cycle if certain conditions are met
+* ```for``` — The most common way to create a loop in JavaScript
+* ```while``` — Sets up conditions under which aloop executes
+* ```do while``` — Similar to the ```while``` loop but it executes at least once and performs a check at the end to see if the condition is met to execute again
+* ```break``` —Used to stop and exit the cycle at certain conditions
+* ```continue``` — Skip parts of the cycle if certain conditions are met
 
 # If – Else Statements
 These types of statements are easy to understand. Using them, you can set conditions for when your code is executed. If certain conditions apply, something is done, if not – something else is executed.
-
+```
 if (condition) {
     // what to do if condition is met
 } else {
     // what to do if condition is not met
 }
-A similar concept to if else is the switch statement. However, using the switch you select one of several code blocks to execute.
+```
+A similar concept to ```if else``` is the ```switch``` statement. However, using the switch you select one of several code blocks to execute.
 
 # Strings
 Strings are what JavaScript calls text that does not perform a function but can appear on the screen.
-
+```
 var person = "John Doe";
-In this case, John Doe is the string.
+```
+In this case, ```John Doe``` is the string.
 
 ## Escape Characters
 In JavaScript, strings are marked with single or double quotes. If you want to use quotation marks in a string, you need to use special characters:
 
-\' — Single quote
-\" — Double quote
-Aside from that you also have additional escape characters:
+* ```\'``` — Single quote
+* ```\"``` — Double quote
 
-\\ — Backslash
-\b — Backspace
-\f — Form feed
-\n — New line
-\r — Carriage return
-\t — Horizontal tabulator
-\v — Vertical tabulator
+Aside from that you also have additional escape characters:
+* ```\\``` — Backslash
+* ```\b``` — Backspace
+* ```\f``` — Form feed
+* ```\n``` — New line
+* ```\r``` — Carriage return
+* ```\t``` — Horizontal tabulator
+* ```\v``` — Vertical tabulator
 
 ## String Methods
 There are many different ways to work with strings:
 
-charAt() — Returns a character at a specified position inside a string
-charCodeAt() — Gives you the unicode of a character at that position
-concat() — Concatenates (joins) two or more strings into one
-fromCharCode() — Returns a string created from the specified sequence of UTF-16 code units
-indexOf() — Provides the position of the first occurrence of a specified text within a string
-lastIndexOf() — Same as indexOf() but with the last occurrence, searching backward
-match() — Retrieves the matches of a string against a search pattern
-replace() — Find and replace specified text in a string
-search() — Executes a search for a matching text and returns its position
-slice() — Extracts a section of a string and returns it as a new string
-split() — Splits a string object into an array of strings at a specified position
-substr() —  Similar to slice() but extracts a substring depending on a specified number of characters
-substring() — Also similar to slice() but can’t accept negative indices
-toLowerCase() — Convert strings to lower case
-toUpperCase() — Convert strings to upper case
-valueOf() — Returns the primitive value (that has no properties or methods) of a string object
+* ```charAt()``` — Returns a character at a specified position inside a string
+* ```charCodeAt()``` — Gives you the unicode of a character at that position
+* ```concat()``` — Concatenates (joins) two or more strings into one
+* ```fromCharCode()``` — Returns a string created from the specified sequence of UTF-16 code units
+* ```indexOf()``` — Provides the position of the first occurrence of a specified text within a string
+* ```lastIndexOf()``` — Same as ```indexOf()``` but with the last occurrence, searching backward
+* ```match()``` — Retrieves the matches of a string against a search pattern
+* ```replace()``` — Find and replace specified text in a string
+* ```search()``` — Executes a search for a matching text and returns its position
+* ```slice()``` — Extracts a section of a string and returns it as a new string
+* ```split()``` — Splits a string object into an array of strings at a specified position
+* ```substr()``` —  Similar to ```slice()``` but extracts a substring depending on a specified number of characters
+* ```substring()``` — Also similar to ```slice()``` but can’t accept negative indices
+* ```toLowerCase()``` — Convert strings to lower case
+* ```toUpperCase()``` — Convert strings to upper case
+* ```valueOf()``` — Returns the primitive value (that has no properties or methods) of a string object
 
 # Regular Expression Syntax
 Regular expressions are search patterns used to match character combinations in strings. The search pattern can be used for text search and text replace operations.
