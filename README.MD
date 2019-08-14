@@ -39,13 +39,13 @@ JavaScript предлагает вам две опции:
 ## Типы данных
 Переменные могут содержать различные типы значений и типов данных. Используйте знак равенства ```=```, чтобы присвоить их:
 
-* Numbers — ```var age = 23```
-* Variables — ```var x```
-* Text (strings) — ```var a = "init"```
-* Operations — ```var b = 1 + 2 + 3```
-* True or false statements — ```var c = true```
-* Constant numbers — ```const PI = 3.14```
-* Objects — ```var name = {firstName:"John", lastName:"Doe"}```
+* Числа — ```var age = 23```
+* Переменные — ```var x```
+* Текст (строки) — ```var a = "init"```
+* Операции — ```var b = 1 + 2 + 3```
+* Истинные или ложные значения — ```var c = true```
+* Константы — ```const PI = 3.14```
+* Объекты — ```var name = {firstName:"John", lastName:"Doe"}```
 
 Обратите внимание, что переменные чувствительны к регистру. Это означает, что ```lastname``` и ``` lastName``` будут обрабатываться как две разные переменные.
 
@@ -65,109 +65,113 @@ var person = {
 
 # Следующий уровень: Массивы
 Next up in our JavaScript cheat sheet are arrays. Arrays are part of many different programming languages. They are a way of organizing variables and properties into groups. Here’s how to create one in JavaScript:
-
+```
 var fruit = ["Banana", "Apple", "Pear"];
-Now you have an array called fruit which contains three items that you can use for future operations.
+```
+Now you have an array called ```fruit``` which contains three items that you can use for future operations.
 
 ## Array Methods
 Once you have created arrays, there are a few things you can do with them:
 
-concat() — Join several arrays into one
-indexOf() — Returns the first position at which a given element appears in an array
-join() — Combine elements of an array into a single string and return the string
-lastIndexOf() — Gives the last position at which a given element appears in an array
-pop() — Removes the last element of an array
-push() — Add a new element at the end
-reverse() — Sort elements in a descending order
-shift() — Remove the first element of an array
-slice() — Pulls a copy of a portion of an array into a new array
-sort() — Sorts elements alphabetically
-splice() — Adds elements in a specified way and position
-toString() — Converts elements to strings
-unshift() —Adds a new element to the beginning
-valueOf() — Returns the primitive value of the specified object
+* ```concat()``` — Join several arrays into one
+* ```indexOf()``` — Returns the first position at which a given element appears in an array
+* ```join()``` — Combine elements of an array into a single string and return the string
+* ```lastIndexOf()``` — Gives the last position at which a given element appears in an array
+* ```pop()``` — Removes the last element of an array
+* ```push()``` — Add a new element at the end
+* ```reverse()``` — Sort elements in a descending order
+* ```shift()``` — Remove the first element of an array
+* ```slice()``` — Pulls a copy of a portion of an array into a new array
+* ```sort()``` — Sorts elements alphabetically
+* ```splice()``` — Adds elements in a specified way and position
+* ```toString()``` — Converts elements to strings
+* ```unshift()``` —Adds a new element to the beginning
+* ```valueOf()``` — Returns the primitive value of the specified object
 
 # Operators
 If you have variables, you can use them to perform different kinds of operations. To do so, you need operators.
 
 ## Basic Operators
-+ — Addition
-- — Subtraction
-* — Multiplication
-/ — Division
-(...) — Grouping operator, operations within brackets are executed earlier than those outside
-% — Modulus (remainder )
-++ — Increment numbers
--- — Decrement numbers
+* ```+``` — Addition
+* ```-``` — Subtraction
+* ```*``` — Multiplication
+* ```/``` — Division
+* ```(...)``` — Grouping operator, operations within brackets are executed earlier than those outside
+* ```%``` — Modulus (remainder )
+* ```++``` — Increment numbers
+* ```--``` — Decrement numbers
 
 ## Comparison Operators
-== — Equal to
-=== — Equal value and equal type
-!= — Not equal
-!== — Not equal value or not equal type
-> — Greater than
-< — Less than
->= — Greater than or equal to
-<= — Less than or equal to
-? — Ternary operator
+* ```==``` — Equal to
+* ```===``` — Equal value and equal type
+* ```!=``` — Not equal
+* ```!==``` — Not equal value or not equal type
+* ```>``` — Greater than
+* ```<``` — Less than
+* ```>=``` — Greater than or equal to
+* ```<=``` — Less than or equal to
+* ```?``` — Ternary operator
 
 ## Logical Operators
-&& — Logical and
-|| — Logical or
-! — Logical not
-Bitwise Operators
-& — AND statement
-| — OR statement
-~ — NOT
-^ — XOR
-<< — Left shift
->> — Right shift
->>> — Zero fill right shift
+* ```&&``` — Logical and
+* ```||``` — Logical or
+* ```!``` — Logical not
+
+## Bitwise Operators
+* ```&``` — AND statement
+* ```|``` — OR statement
+* ```~``` — NOT
+* ```^``` — XOR
+* ```<<``` — Left shift
+* ```>>``` — Right shift
+* ```>>>``` — Zero fill right shift
 
 # Functions
 JavaScript functions are blocks of code which perform a certain task. A basic function looks like this:
-
+```
 function name(parameter1, parameter2, parameter3) {
     // what the function does
 }
-As you can see, it consists the function keyword plus a name. The function’s parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier – there are also a number of default functions.
+```
+As you can see, it consists the ```function``` keyword plus a name. The function’s parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier – there are also a number of default functions.
 
 ## Outputting Data
 A common application for functions is the output of data. For the output, you have the following options:
 
-alert() — Output data in an alert box in the browser window
-confirm() — Opens up a yes/no dialog and returns true/false depending on user click
-console.log() — Writes information to the browser console, good for debugging purposes
-document.write() — Write directly to the HTML document
-prompt() — Creates a dialogue for user input
+```alert()``` — Output data in an alert box in the browser window
+```confirm()``` — Opens up a yes/no dialog and returns true/false depending on user click
+```console.log()``` — Writes information to the browser console, good for debugging purposes
+```document.write()``` — Write directly to the HTML document
+```prompt()``` — Creates a dialogue for user input
 
 ## Global Functions
 Global functions are functions built into every browser capable of running JavaScript.
 
-decodeURI() — Decodes a Uniform Resource Identifier (URI) created by encodeURI or similar
-decodeURIComponent() — Decodes a URI component
-encodeURI() — Encodes a URI into UTF-8
-encodeURIComponent() — Same but for URI components
-eval() — Evaluates JavaScript code represented as a string
-isFinite() — Determines whether a passed value is a finite number
-isNaN() — Determines whether a value is NaN or not
-Number() —- Returns a number converted from its argument
-parseFloat() — Parses an argument and returns a floating point number
-parseInt() — Parses its argument and returns an integer
+```decodeURI()``` — Decodes a [Uniform Resource Identifier](https://ru.wikipedia.org/wiki/URI "Википедия url") created by encodeURI or similar
+```decodeURIComponent()``` — Decodes a URI component
+```encodeURI()``` — Encodes a URI into UTF-8
+```encodeURIComponent()``` — Same but for URI components
+```eval()``` — Evaluates JavaScript code represented as a string
+```isFinite()``` — Determines whether a passed value is a finite number
+```isNaN()``` — Determines whether a value is NaN or not
+```Number()``` — Returns a number converted from its argument
+```parseFloat()``` — Parses an argument and returns a floating point number
+```parseInt()``` — Parses its argument and returns an integer
 
 # JavaScript Loops
 Loops are part of most programming languages. They allow you to execute blocks of code desired number of times with different values:
-
+```
 for (before loop; condition for loop; execute after loop) {
     // what to do during the loop
 }
+```
 You have several parameters to create loops:
 
-for — The most common way to create a loop in JavaScript
-while — Sets up conditions under which aloop executes
-do while — Similar to the while loop but it executes at least once and performs a check at the end to see if the condition is met to execute again
-break —Used to stop and exit the cycle at certain conditions
-continue — Skip parts of the cycle if certain conditions are met
+```for``` — The most common way to create a loop in JavaScript
+```while``` — Sets up conditions under which aloop executes
+```do while``` — Similar to the ```while``` loop but it executes at least once and performs a check at the end to see if the condition is met to execute again
+```break``` —Used to stop and exit the cycle at certain conditions
+```continue``` — Skip parts of the cycle if certain conditions are met
 
 # If – Else Statements
 These types of statements are easy to understand. Using them, you can set conditions for when your code is executed. If certain conditions apply, something is done, if not – something else is executed.
