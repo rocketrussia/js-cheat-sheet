@@ -60,37 +60,37 @@ var person = {
 };
 ```
 
+# Следующий уровень: Массивы
+Далее в нашей шпаргалке JavaScript находятся массивы. Массивы являются частью разных языков программирования. Они помогают группировать переменные и свойства. Вот как это делается в JS:
+```
+var fruit = ["Banana", "Apple", "Pear"];
+```
+Теперь у вас есть массив с именем ```fruit```, который содержит три элемента, которые вы можете использовать в последующих операциях.
+
+## Методы для работы с массивами
+После того, как вы создали массивы, вы можете применить следующие методы:
+
+* ```concat()``` — Объединяет несколько массивов в один
+* ```indexOf()``` — Ищет индекс элемента в массиве, если элемента нет - возращает -1
+* ```join()``` — Объединяет элементы массива в одну строку и возращает эту строку
+* ```lastIndexOf()``` — Ищет последний встречающийся индекс элемента в массиве
+* ```pop()``` — Удаляет последний элемент массива
+* ```push()``` — Добавляет новый элемент в конце
+* ```reverse()``` — Сортировка элементов в обратном порядке
+* ```shift()``` — Удаляет первый элемент массива
+* ```slice()``` — Возвращает новый массив, содержащий копию части исходного массива
+* ```sort()``` — Сортирует элементы по алфавиту
+* ```splice()``` — Изменяет содержимое массива, удаляя существующие элементы и/или добавляя новые.
+* ```toString()``` — Преобразует элементы в строку
+* ```unshift()``` — Добавляет новый элемент в начало массива
+* ```valueOf()``` — Возвращает примитивное значение указанного объекта, чаще всего используется для преобразования в число
+
 # Внимание
 Информация следующая далее находится в процессе перевода на русский язык
 
 ```
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ```
-
-# Следующий уровень: Массивы
-Next up in our JavaScript cheat sheet are arrays. Arrays are part of many different programming languages. They are a way of organizing variables and properties into groups. Here’s how to create one in JavaScript:
-```
-var fruit = ["Banana", "Apple", "Pear"];
-```
-Now you have an array called ```fruit``` which contains three items that you can use for future operations.
-
-## Array Methods
-Once you have created arrays, there are a few things you can do with them:
-
-* ```concat()``` — Join several arrays into one
-* ```indexOf()``` — Returns the first position at which a given element appears in an array
-* ```join()``` — Combine elements of an array into a single string and return the string
-* ```lastIndexOf()``` — Gives the last position at which a given element appears in an array
-* ```pop()``` — Removes the last element of an array
-* ```push()``` — Add a new element at the end
-* ```reverse()``` — Sort elements in a descending order
-* ```shift()``` — Remove the first element of an array
-* ```slice()``` — Pulls a copy of a portion of an array into a new array
-* ```sort()``` — Sorts elements alphabetically
-* ```splice()``` — Adds elements in a specified way and position
-* ```toString()``` — Converts elements to strings
-* ```unshift()``` —Adds a new element to the beginning
-* ```valueOf()``` — Returns the primitive value of the specified object
 
 # Operators
 If you have variables, you can use them to perform different kinds of operations. To do so, you need operators.
