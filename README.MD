@@ -123,44 +123,44 @@ var fruit = ["Banana", "Apple", "Pear"];
 * ```>>``` — Сдвигает в двоичном представлении на бит вправо
 * ```>>>``` — Сдвигает в двоичном представлении на бит вправо, отбрасывая сдвигаемые биты
 
+# Функции
+Функции JavaScript - блоки кода, которые выполняют определенную задачу. Простейшая функция выглядит следующим образом:
+```
+function name(parameter1, parameter2, parameter3) {
+    // what the function does
+}
+```
+Как видите, она состоит из ключевого слова ```function``` и ее имени. Параметры функции находятся в скобках, а в фигурных скобках - то что функция выполняет. Вы можете создать свою собственную функцию, но чтобы сделать вашу жизнь чуть проще - есть ряд функций и методов встроенных в JS.
+
+## Вывод данных
+Используйте следующие функции для вывода данных:
+
+* ```alert()``` — Вывод данных в окне браузера (по идее должно использоваться как окно предупреждения, но чаще используется начинающими разработчиками для разработки первых программ)
+* ```confirm()``` — Открывает диалоговое окно с выбором "да / нет" и возвращает true / false в зависимости от клика пользователя
+* ```console.log()``` — Записывает информацию в консоль браузера, довольно неплохо подходит для отладки кода
+* ```document.write()``` — Дописывает текст в текущее место HTML ещё до того, как браузер построит из него DOM.
+* ```prompt()``` — Создает диалоговое окно для пользовательского ввода
+
+## Глобальные функции
+Глобальные функции - функции встроенные в каждый браузерподдерживающий JavaScript.
+
+* ```decodeURI()``` — Декодирует [Uniform Resource Identifier](https://ru.wikipedia.org/wiki/URI "Википедия url") в читабельный вид
+* ```decodeURIComponent()``` — Декодирует последовательности символов в URI компоненте
+* ```encodeURI()``` — Кодирует URI в UTF-8
+* ```encodeURIComponent()``` — Тоже самое только для URI компонентов
+* ```eval()``` — Выполняет код JavaScript, представленный в виде строки (например, eval('2 + 2') вернет 4)
+* ```isFinite()``` — Определяет, является ли переданное значение конечным числом
+* ```isNaN()``` — Определяет, является ли значение NaN или нет
+* ```Number()``` — Возвращает число, преобразованное из его аргумента
+* ```parseFloat()``` — Принимает строку в качестве аргумента и возвращает десятичное число
+* ```parseInt()``` — принимает строку в качестве аргумента и возвращает целое число
+
 # Внимание
 Информация следующая далее находится в процессе перевода на русский язык
 
 ```
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ```
-
-# Functions
-JavaScript functions are blocks of code which perform a certain task. A basic function looks like this:
-```
-function name(parameter1, parameter2, parameter3) {
-    // what the function does
-}
-```
-As you can see, it consists the ```function``` keyword plus a name. The function’s parameters are in the brackets and you have curly brackets around what the function performs. You can create your own, but to make your life easier – there are also a number of default functions.
-
-## Outputting Data
-A common application for functions is the output of data. For the output, you have the following options:
-
-* ```alert()``` — Output data in an alert box in the browser window
-* ```confirm()``` — Opens up a yes/no dialog and returns true/false depending on user click
-* ```console.log()``` — Writes information to the browser console, good for debugging purposes
-* ```document.write()``` — Write directly to the HTML document
-* ```prompt()``` — Creates a dialogue for user input
-
-## Global Functions
-Global functions are functions built into every browser capable of running JavaScript.
-
-* ```decodeURI()``` — Decodes a [Uniform Resource Identifier](https://ru.wikipedia.org/wiki/URI "Википедия url") created by encodeURI or similar
-* ```decodeURIComponent()``` — Decodes a URI component
-* ```encodeURI()``` — Encodes a URI into UTF-8
-* ```encodeURIComponent()``` — Same but for URI components
-* ```eval()``` — Evaluates JavaScript code represented as a string
-* ```isFinite()``` — Determines whether a passed value is a finite number
-* ```isNaN()``` — Determines whether a value is NaN or not
-* ```Number()``` — Returns a number converted from its argument
-* ```parseFloat()``` — Parses an argument and returns a floating point number
-* ```parseInt()``` — Parses its argument and returns an integer
 
 # JavaScript Loops
 Loops are part of most programming languages. They allow you to execute blocks of code desired number of times with different values:
