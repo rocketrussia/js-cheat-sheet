@@ -127,7 +127,7 @@ var fruit = ["Banana", "Apple", "Pear"];
 Функции JavaScript - блоки кода, которые выполняют определенную задачу. Простейшая функция выглядит следующим образом:
 ```
 function name(parameter1, parameter2, parameter3) {
-    // what the function does
+    // то, что должна выполнить функция
 }
 ```
 Как видите, она состоит из ключевого слова ```function``` и ее имени. Параметры функции находятся в скобках, а в фигурных скобках - то что функция выполняет. Вы можете создать свою собственную функцию, но чтобы сделать вашу жизнь чуть проще - есть ряд функций и методов встроенных в JS.
@@ -155,38 +155,50 @@ function name(parameter1, parameter2, parameter3) {
 * ```parseFloat()``` — Принимает строку в качестве аргумента и возвращает десятичное число
 * ```parseInt()``` — принимает строку в качестве аргумента и возвращает целое число
 
+# Циклы в JavaScript
+Циклы являются частью большинства языков программирования. Они позволяют выполнять блоки кода нужное количество раз с разными значениями:
+```
+for (значение до запуска; условие прерывания; изменение значения после совершения итерации) {
+    // необходимые действия во время цикла
+}
+```
+У вас есть несколько параметров для создания циклов:
+
+* ```for``` — Самый распространенный способ создания цикла в JavaScript
+* ```while``` — Устанавливает условия, при которых выполняется цикл
+* ```do while``` — Похожий на ```while``` цикл, но он выполняется по крайней мере один раз и в конце выполняет проверку, чтобы проверить, выполнено ли условие для повторного выполнения
+* ```break``` — Используется для остановки и выхода из цикла при определенных условиях
+* ```continue``` — Пропускает части цикла, если соблюдены определенные условия
+
+# If – Else Statements
+Используя ```if``` и ```else```, вы cможете установить условия, для выполнения вашего кода. Если применяются определенные условия, что-то выполняется, если нет - выполняется что-то другое.
+```
+if (условие) {
+    // выполняется, если условие выполнено
+} else {
+    // выполняется, если условие не выполнено
+}
+```
+Концепция, похожая на ```if else```, - это выражение ``` switch```. Однако, используя ``` switch```, вы выбираете один из нескольких блоков кода для выполнения.
+```
+switch (состояние) {
+  case state1:
+    // выполняется, если состояние = state1
+    break;
+  case state2:
+    // выполняется, если состояние = state2
+    break;
+  default:
+    // выполняется, по умолчанию
+}
+```
+
 # Внимание
 Информация следующая далее находится в процессе перевода на русский язык
 
 ```
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ```
-
-# JavaScript Loops
-Loops are part of most programming languages. They allow you to execute blocks of code desired number of times with different values:
-```
-for (before loop; condition for loop; execute after loop) {
-    // what to do during the loop
-}
-```
-You have several parameters to create loops:
-
-* ```for``` — The most common way to create a loop in JavaScript
-* ```while``` — Sets up conditions under which aloop executes
-* ```do while``` — Similar to the ```while``` loop but it executes at least once and performs a check at the end to see if the condition is met to execute again
-* ```break``` —Used to stop and exit the cycle at certain conditions
-* ```continue``` — Skip parts of the cycle if certain conditions are met
-
-# If – Else Statements
-These types of statements are easy to understand. Using them, you can set conditions for when your code is executed. If certain conditions apply, something is done, if not – something else is executed.
-```
-if (condition) {
-    // what to do if condition is met
-} else {
-    // what to do if condition is not met
-}
-```
-A similar concept to ```if else``` is the ```switch``` statement. However, using the switch you select one of several code blocks to execute.
 
 # Strings
 Strings are what JavaScript calls text that does not perform a function but can appear on the screen.
