@@ -535,7 +535,7 @@ Events are things that can happen to HTML elements and are performed by the user
 * onpopstate — When the window’s history changes
 * onshow — A <menu> element is shown as a context menu
 * onstorage — A Web Storage area is updated
-* ontoggle — The user opens or closes the <details> element
+* ontoggle — The user opens or closes the details element
 * onwheel — Mouse wheel rolls up or down over an element
 * ontouchcancel — Screen-touch is interrupted
 * ontouchend — User’s finger is removed from a touch-screen
