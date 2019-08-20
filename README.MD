@@ -245,8 +245,8 @@ There are many different ways to work with strings:
 * ```valueOf()``` — Returns the primitive value (that has no properties or methods) of a string object
 
 # Регулярные выражения
-Важная тема, но как будто бы не так сильно, относящиеся к теме. 
-По этому я создал отдельный фаил где будет хранится перевод с регулярками:
+Важная тема, но как будто бы не так сильно, относящаяся к JS. 
+По этому я создал отдельный фаил где будет хранится перевод с регулярными выражениями:
 https://github.com/rocketrussia/js-cheat-sheet/blob/master/REGEX.md
 
 # Numbers and Math
