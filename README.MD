@@ -564,7 +564,7 @@ The error property can return six different values as its name:
 * TypeError — A type error has occurred
 * URIError — An encodeURI() error has occurred
 
-# The JavaScript Cheat Sheet in a Nutshell
-JavaScript is gaining much importance as a programming language. It is increasingly the go-to language for building web properties thanks to its proven track record and benefits.
+# Вкратце об шпаргалке JavaScript
+В последние годы JavaScript приобрел большую популярность как язык программирования. Все большее число людей используют его для создания относительно простых веб-страниц до монструозных приложений. Все это благодаря объемному послужному списку и большому числу преимуществ.
 
-In the JavaScript cheat sheet above, we have compiled many of the most basic and important operators, functions, principles, and methods. It provides a good overview of the language and a reference for both developers and learners. We hope you have found it useful.
+В приведенной выше шпаргалке, мы собрали множество самых основных и важных операторов, функций, принципов и методов. Она предоставляет хороший обзор языка и справку для опытных и начинающих разработчиков. Мы надеемся, что вы смогли использовать в полной мере данный материал.
