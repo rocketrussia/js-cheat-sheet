@@ -1,8 +1,9 @@
 # Синтаксис регулярных выражений
 Извините, но перевод будет чуть позже
+
 Regular expressions are search patterns used to match character combinations in strings. The search pattern can be used for text search and text replace operations.
 
-## Pattern Modifiers
+## Модификаторы
 * e — Evaluate replacement
 * i — Perform case-insensitive matching
 * g — Perform global matching
@@ -11,14 +12,14 @@ Regular expressions are search patterns used to match character combinations in 
 * x — Allow comments and whitespace in the pattern
 * U — Ungreedy pattern
 
-## Brackets
+## Скобки
 * [abc] — Find any of the characters between the brackets
 * [^abc] — Find any character which are not in the brackets
 * [0-9] — Used to find any digit from 0 to 9
 * [A-z] — Find any character from uppercase A to lowercase z
 * (a|b|c) — Find any of the alternatives separated with |
 
-## Metacharacters
+## Метасимволы
 * . — Find a single character, except newline or line terminator
 * \w — Word character
 * \W — Non-word character
@@ -38,7 +39,7 @@ Regular expressions are search patterns used to match character combinations in 
 * \xdd — Character specified by a hexadecimal number dd
 * \uxxxx — The Unicode character specified by a hexadecimal number xxxx
 
-## Quantifiers
+## Квантификаторы
 * n+ — Matches any string that contains at least one n
 * n* — Any string that contains zero or more occurrences of n
 * n? — A string that contains zero or one occurrence of n
