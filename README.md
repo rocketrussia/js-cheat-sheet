@@ -195,59 +195,55 @@ switch (состояние) {
 }
 ```
 
-# Внимание
-Информация следующая далее находится в процессе перевода на русский язык
-
-```
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-```
-
 # Strings
-Strings are what JavaScript calls text that does not perform a function but can appear on the screen.
+Строками в JS являются любые текстовые данные.
 ```
 var person = "John Doe";
 ```
-In this case, ```John Doe``` is the string.
+В этом случае, ```John Doe``` является строкой.
 
-## Escape Characters
-In JavaScript, strings are marked with single or double quotes. If you want to use quotation marks in a string, you need to use special characters:
+## Спецсимволы
+В JavaScript строки помечаются одинарными или двойными кавычками. Если вы хотите использовать кавычки в строке, вам нужно использовать специальные символы:
 
-* ```\'``` — Single quote
-* ```\"``` — Double quote
+* ```\'``` — Ординарная кавычка
+* ```\"``` — Двойная кавычка
 
-Aside from that you also have additional escape characters:
-* ```\\``` — Backslash
-* ```\b``` — Backspace
-* ```\f``` — Form feed
-* ```\n``` — New line
-* ```\r``` — Carriage return
-* ```\t``` — Horizontal tabulator
-* ```\v``` — Vertical tabulator
+Помимо этого у вас также есть дополнительные спецсимволы:
+* ```\\``` - Обратная косая черта
+* ```\n``` - Новая строка
+* ```\r``` - возврат каретки
+* ```\t``` - Горизонтальный табулятор
 
-## String Methods
-There are many different ways to work with strings:
+## Методы работы со строками
 
-* ```charAt()``` — Returns a character at a specified position inside a string
-* ```charCodeAt()``` — Gives you the unicode of a character at that position
-* ```concat()``` — Concatenates (joins) two or more strings into one
-* ```fromCharCode()``` — Returns a string created from the specified sequence of UTF-16 code units
-* ```indexOf()``` — Provides the position of the first occurrence of a specified text within a string
-* ```lastIndexOf()``` — Same as ```indexOf()``` but with the last occurrence, searching backward
-* ```match()``` — Retrieves the matches of a string against a search pattern
-* ```replace()``` — Find and replace specified text in a string
-* ```search()``` — Executes a search for a matching text and returns its position
-* ```slice()``` — Extracts a section of a string and returns it as a new string
-* ```split()``` — Splits a string object into an array of strings at a specified position
-* ```substr()``` —  Similar to ```slice()``` but extracts a substring depending on a specified number of characters
-* ```substring()``` — Also similar to ```slice()``` but can’t accept negative indices
-* ```toLowerCase()``` — Convert strings to lower case
-* ```toUpperCase()``` — Convert strings to upper case
+* ```charAt()``` — Возвращает символ в указанной позиции внутри строки
+* ```charCodeAt()``` — Дает вам юникод символа в этой позиции
+* ```concat()``` — Объединяет (объединяет) две или более строки в одну
+* ```fromCharCode()``` — Возвращает строку, созданную из указанной последовательности единиц кода UTF-16
+* ```indexOf()``` — Предоставляет индекс первого вхождения указанного текста в строке
+* ```lastIndexOf()``` — То же, что ```indexOf ()```, но с последним вхождением, поиск в обратном направлении
+* ```match()``` — Возвращает получившиеся совпадения при сопоставлении строки с регулярным выражением.
+* ```replace()``` — Найти и заменить определенный текст в строке
+* ```search()``` — Выполняет поиск сопоставления между регулярным выражением и строкой
+* ```slice()``` — Извлекает часть строки и возвращает ее как новую строку
+* ```split()``` — Разбивает строку на массив строк путём разделения строки указанной подстрокой.
+* ```substr()``` —  Возвращает указанное количество символов из строки, начиная с указанной позиции.
+* ```substring()``` —  Возвращает подстроку строки между двумя индексами, или от одного индекса и до конца строки.
+* ```toLowerCase()``` — Конвертирует значение строки в нижний регистр
+* ```toUpperCase()``` — Конвертирует значение строки в верхний регистр
 * ```valueOf()``` — Returns the primitive value (that has no properties or methods) of a string object
 
 # Регулярные выражения
 Важная тема, но как будто бы не так сильно, относящаяся к JS. 
 По этому я создал отдельный фаил где будет хранится перевод с регулярными выражениями:
 https://github.com/rocketrussia/js-cheat-sheet/blob/master/REGEX.md
+
+# Внимание
+Информация следующая далее находится в процессе перевода на русский язык
+
+```
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+```
 
 # Numbers and Math
 In JavaScript, you can also work with numbers, constants and perform mathematical functions.
