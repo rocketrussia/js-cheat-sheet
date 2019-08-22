@@ -172,7 +172,7 @@ for (значение до запуска; условие прерывания; 
 * ```break``` — Используется для остановки и выхода из цикла при определенных условиях
 * ```continue``` — Пропускает части цикла, если соблюдены определенные условия
 
-# If – Else Statements
+# Оператор If - Else
 Используя ```if``` и ```else```, вы cможете установить условия, для выполнения вашего кода. Если применяются определенные условия, что-то выполняется, если нет - выполняется что-то другое.
 ```
 if (условие) {
@@ -195,7 +195,7 @@ switch (состояние) {
 }
 ```
 
-# Strings
+# Строки
 Строками в JS являются любые текстовые данные.
 ```
 var person = "John Doe";
@@ -238,59 +238,59 @@ var person = "John Doe";
 По этому я создал отдельный фаил где будет хранится перевод с регулярными выражениями:
 https://github.com/rocketrussia/js-cheat-sheet/blob/master/REGEX.md
 
+# Числа и Вычисления
+В JavaScript вы  можете работать с числами, константами и выполнять математические функции.
+
+## Свойства чисел
+* MAX_VALUE — Максимальное числовое значение
+* MIN_VALUE — Наименьшее положительное числовое значение, представимое в JavaScript
+* NaN — Значение "Не число". Является числом &#129335;&zwj;&#9794;
+* NEGATIVE_INFINITY — Отрицательное значение бесконечности
+* POSITIVE_INFINITY — Положительное значение бесконечности
+
+## Числовые методы
+* toExponential() — Возвращает строку с округленным числом, записанным в виде экспоненциальной записи
+* toFixed() — Возвращает строку числа с указанным количеством десятичных знаков
+* toPrecision() — Строка числа, написанного с указанной длиной
+* toString() — Возвращает число в виде строки
+* valueOf() — Возвращает число как число
+
+## Математические свойства
+* E — Основание натурального логарифма, математическая константа, иррациональное и трансцендентное число
+* LN2 — Натуральный логарифм в степени 2
+* LN10 — Натуральный логарифм в степени 10
+* LOG2E — Двоичный логарифм из e
+* LOG10E — Десятичный логарифм из e
+* PI — Число "Пи"
+* SQRT1_2 — Квадратный корень из 1/2
+* SQRT2 — Квадратный корень из 2
+
+## Математические методы
+* abs(x) — Абсолютное значение числа от x
+* acos(x) — Арккосинус числа (в радианах) от x
+* asin(x) — Арксинус числа (в радианах) от x
+* atan(x) — Арктангенс числа (в радианах) от x
+* atan2(y,x) — Аарктангенс от частного аргументов y и x
+* ceil(x) — Округляет аргумент x до ближайшего большего целого
+* cos(x) — Косинус числа x
+* exp(x) — Кначение выражения e^x, где x — аргумент метода, а e — число Эйлера, основание натурального логарифма.
+* floor(x) — Целое число, которое меньше или равно числу x.
+* log(x) — Натуральный логарифм от x
+* max(x,y,z,...,n) — Возращает максимальное число
+* min(x,y,z,...,n) — Возращает минимальное число
+* pow(x,y) — Возводит x в степень y
+* random() — Возращает рандомное число от 0 до 1
+* round(x) — Возвращает число, округлённое к ближайшему целому
+* sin(x) — Синус числа (в радианах) от x
+* sqrt(x) — Квадратный корень от x
+* tan(x) — Тангенс числа x
+
 # Внимание
 Информация следующая далее находится в процессе перевода на русский язык
 
 ```
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ```
-
-# Numbers and Math
-In JavaScript, you can also work with numbers, constants and perform mathematical functions.
-
-## Number Properties
-* MAX_VALUE — The maximum numeric value representable in JavaScript
-* MIN_VALUE — Smallest positive numeric value representable in JavaScript
-* NaN — The “Not-a-Number” value
-* NEGATIVE_INFINITY — The negative Infinity value
-* POSITIVE_INFINITY — Positive Infinity value
-
-## Number Methods
-* toExponential() — Returns the string with a rounded number written as exponential notation
-* toFixed() — Returns the string of a number with a specified number of decimals
-* toPrecision() — String of a number written with a specified length
-* toString() — Returns a number as a string
-* valueOf() — Returns a number as a number
-
-## Math Properties
-* E — Euler’s number
-* LN2 — The natural logarithm of 2
-* LN10 — Natural logarithm of 10
-* LOG2E — Base 2 logarithm of E
-* LOG10E — Base 10 logarithm of E
-* PI — The number PI
-* SQRT1_2 — Square root of 1/2
-* SQRT2 — The square root of 2
-
-## Math Methods
-* abs(x) — Returns the absolute (positive) value of x
-* acos(x) — The arccosine of x, in radians
-* asin(x) — Arcsine of x, in radians
-* atan(x) — The arctangent of x as a numeric value
-* atan2(y,x) — Arctangent of the quotient of its arguments
-* ceil(x) — Value of x rounded up to its nearest integer
-* cos(x) — The cosine of x (x is in radians)
-* exp(x) — Value of Ex
-* floor(x) — The value of x rounded down to its nearest integer
-* log(x) — The natural logarithm (base E) of x
-* max(x,y,z,...,n) — Returns the number with the highest value
-* min(x,y,z,...,n) — Same for the number with the lowest value
-* pow(x,y) — X to the power of y
-* random() — Returns a random number between 0 and 1
-* round(x) — The value of x rounded to its nearest integer
-* sin(x) — The sine of x (x is in radians)
-* sqrt(x) — Square root of x
-* tan(x) — The tangent of an angle
 
 # Dealing with Dates in JavaScript
 You can also work with and modify dates and time with JavaScript. This is the next chapter in the JavaScript cheat sheet.
