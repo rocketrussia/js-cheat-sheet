@@ -226,12 +226,12 @@ var person = "John Doe";
 * ```replace()``` — Найти и заменить определенный текст в строке
 * ```search()``` — Выполняет поиск сопоставления между регулярным выражением и строкой
 * ```slice()``` — Извлекает часть строки и возвращает ее как новую строку
-* ```split()``` — Разбивает строку на массив строк путём разделения строки указанной подстрокой.
-* ```substr()``` —  Возвращает указанное количество символов из строки, начиная с указанной позиции.
-* ```substring()``` —  Возвращает подстроку строки между двумя индексами, или от одного индекса и до конца строки.
+* ```split()``` — Разбивает строку на массив строк путём разделения строки указанной подстрокой
+* ```substr()``` —  Возвращает указанное количество символов из строки, начиная с указанной позиции
+* ```substring()``` —  Возвращает подстроку строки между двумя индексами, или от одного индекса и до конца строки
 * ```toLowerCase()``` — Конвертирует значение строки в нижний регистр
 * ```toUpperCase()``` — Конвертирует значение строки в верхний регистр
-* ```valueOf()``` — Возвращает примитивное значение объекта String.
+* ```valueOf()``` — Возвращает примитивное значение объекта String
 
 # Регулярные выражения
 Важная тема, но как будто бы не так сильно, относящаяся к JS. 
@@ -273,7 +273,7 @@ https://github.com/rocketrussia/js-cheat-sheet/blob/master/REGEX.md
 * ```atan2(y,x)``` — Аарктангенс от частного аргументов y и x
 * ```ceil(x)``` — Округляет аргумент x до ближайшего большего целого
 * ```cos(x)``` — Косинус числа x
-* ```exp(x)``` — Кначение выражения e^x, где x — аргумент метода, а e — число Эйлера, основание натурального логарифма.
+* ```exp(x)``` — Кначение выражения e^x, где x — аргумент метода, а e — число Эйлера, основание натурального логарифма
 * ```floor(x)``` — Целое число, которое меньше или равно числу x.
 * ```log(x)``` — Натуральный логарифм от x
 * ```max(x,y,z,...,n)``` — Возращает максимальное число
@@ -317,65 +317,67 @@ https://github.com/rocketrussia/js-cheat-sheet/blob/master/REGEX.md
 * ```setTime()``` — Время в миллисекунданх с 1го января 1970 года
 * ```setUTCDate()``` — День месяца указанной даты по UTC
 
+# Работаем с DOM
+DOM(Document Object Model) - объектная модель документа, представляет из себя структуру веб-страницы. JavaScript поставляется с множеством различных способов создания и управления HTML-элементами (называемыми узлами) - DOM API.
+
+## Свойства Node
+Node это интерфейс, от которого наследуют несколько типов DOM, он так же позволяет различным типам быть обработанными(или протестированными).
+
+* ```attributes``` — Возвращает группу атрибутов всех узлов, зарегистрированных в указанном узле.
+* ```baseURI``` — Возвращает абсолютный базовый URL узла (Свойство Node.baseURI только для чтения)
+* ```childNode``` — Предоставляет коллекцию дочерних узлов элемента
+* ```firstChild``` — Возвращает первый дочерний узел элемента
+* ```lastChild``` — Последний дочерний узел элемента
+* ```nextSibling``` — Дает вам следующий узел на том же уровне дерева узлов
+* ```nodeName``` — Возвращает имя узла
+* ```nodeType``` —  Возвращает тип узла
+* ```nodeValue``` — Устанавливает или возвращает значение узла
+* ```ownerDocument``` — Объект документа верхнего уровня для этого узла
+* ```parentNode``` — Возвращает родительский узел элемента
+* ```previousSibling``` — Возвращает узел, непосредственно предшествующий текущему
+* ```textContent``` — Устанавливает или возвращает текстовое содержимое узла и его потомков
+
+## Node методы
+* ```appendChild()``` — Добавляет новый дочерний узел в элемент как последний дочерний узел
+* ```cloneNode()``` — Клонирует элемент HTML
+* ```compareDocumentPosition()``` — Сравнивает позицию текущего узла и другого узла в любом другом документе
+* ```getFeature()``` — Возвращает объект, который реализует API указанной функции
+* ```hasAttributes()``` — Возвращает true, если элемент имеет какие-либо атрибуты, иначе false
+* ```hasChildNodes()``` — Возвращает true, если элемент имеет дочерние узлы, в противном случае false
+* ```insertBefore()``` — Вставляет новый дочерний узел перед указанным существующим дочерним узлом
+* ```isDefaultNamespace()``` — Возвращает true, если заданный namespaceURI является значением по умолчанию, иначе false
+* ```isEqualNode()``` — Проверяет, равны ли два элемента
+* ```isSameNode()``` — Проверяет, являются ли два элемента одним узлом
+* ```isSupported()``` — Возвращает true, если указанная функция поддерживается для элемента
+* ```lookupNamespaceURI()``` — Возвращает URI пространства имен, связанный с данным узлом
+* ```lookupPrefix()``` — Возвращает DOMString, содержащую префикс для заданного URI пространства имен, если присутствует
+* ```normalize()``` — Объединяет смежные текстовые узлы и удаляет пустые текстовые узлы в элементе
+* ```removeChild()``` — Удаляет дочерний узел из элемента
+* ```replaceChild()``` — Заменяет дочерний узел в элементе
+
+## Element Methods
+* ```getAttribute()``` - Возвращает указанное значение атрибута узла элемента
+* ```getAttributeNS()``` - Возвращает строковое значение атрибута с указанным пространством имен и именем
+* ```getAttributeNode()``` - Получает указанный узел атрибута
+* ```getAttributeNodeNS()``` - Возвращает узел атрибута для атрибута с заданным пространством имен и именем
+* ```getElementsByTagName()``` - Предоставляет коллекцию всех дочерних элементов с указанным именем тега
+* ```getElementsByTagNameNS()``` - Возвращает живую коллекцию HTMLCol элементов с определенным именем тега, принадлежащим данному пространству имен
+* ```hasAttribute()``` - Возвращает true, если элемент имеет какие-либо атрибуты, в противном случае false
+* ```hasAttributeNS()``` - Предоставляет значение true / false, указывающее, имеет ли текущий элемент в данном пространстве имен заданный атрибут
+* ```removeAttribute()``` - Удаляет указанный атрибут из элемента
+* ```removeAttributeNS()``` - Удаляет указанный атрибут из элемента в определенном пространстве имен
+* ```removeAttributeNode()``` - Забирает указанный узел атрибута и возвращает удаленный узел
+* ```setAttribute()``` - Устанавливает или изменяет указанный атрибут на указанное значение
+* ```setAttributeNS()``` - Добавляет новый атрибут или изменяет значение атрибута с заданным пространством имен и именем
+* ```setAttributeNode()``` - Устанавливает или изменяет указанный атрибут узла
+* ```setAttributeNodeNS()``` - Добавляет новый узел атрибута пространства имен к элементу
+
 # Внимание
 Информация следующая далее находится в процессе перевода на русский язык
 
 ```
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ```
-
-# DOM Mode
-The DOM is the Document Object Model of a page. It is the code of the structure of a webpage. JavaScript comes with a lot of different ways to create and manipulate HTML elements (called nodes).
-
-## Node Properties
-* ```attributes``` — Returns a live collection of all attributes registered to an element
-* ```baseURI``` — Provides the absolute base URL of an HTML element
-* ```childNodes``` — Gives a collection of an element’s child nodes
-* ```firstChild``` — Returns the first child node of an element
-* ```lastChild``` — The last child node of an element
-* ```nextSibling``` — Gives you the next node at the same node tree level
-* ```nodeName``` — Returns the name of a node
-* ```nodeType``` —  Returns the type of a node
-* ```nodeValue``` — Sets or returns the value of a node
-* ```ownerDocument``` — The top-level document object for this node
-* ```parentNode``` — Returns the parent node of an element
-* ```previousSibling``` — Returns the node immediately preceding the current one
-* ```textContent``` — Sets or returns the textual content of a node and its descendants
-
-## Node Methods
-* ```appendChild()``` — Adds a new child node to an element as the last child node
-* ```cloneNode()``` — Clones an HTML element
-* ```compareDocumentPosition()``` — Compares the document position of two elements
-* ```getFeature()``` — Returns an object which implements the APIs of a specified feature
-* ```hasAttributes()``` — Returns true if an element has any attributes, otherwise false
-* ```hasChildNodes()``` — Returns true if an element has any child nodes, otherwise false
-* ```insertBefore()``` — Inserts a new child node before a specified, existing child node
-* ```isDefaultNamespace()``` — Returns true if a specified namespaceURI is the default, otherwise false
-* ```isEqualNode()``` — Checks if two elements are equal
-* ```isSameNode()``` — Checks if two elements are the same node
-* ```isSupported()``` — Returns true if a specified feature is supported on the element
-* ```lookupNamespaceURI()``` — Returns the namespace URI associated with a given node
-* ```lookupPrefix()``` — Returns a DOMString containing the prefix for a given namespace URI, if present
-* ```normalize()``` — Joins adjacent text nodes and removes empty text nodes in an element
-* ```removeChild()``` — Removes a child node from an element
-* ```replaceChild()``` — Replaces a child node in an element
-
-## Element Methods
-* ```getAttribute()``` — Returns the specified attribute value of an element node
-* ```getAttributeNS()``` — Returns string value of the attribute with the specified namespace and name
-* ```getAttributeNode()``` — Gets the specified attribute node
-* ```getAttributeNodeNS()``` — Returns the attribute node for the attribute with the given namespace and name
-* ```getElementsByTagName()``` — Provides a collection of all child elements with the specified tag name
-* ```getElementsByTagNameNS()``` —  Returns a live HTMLCollection of elements with a certain tag name belonging to the given namespace
-* ```hasAttribute()``` — Returns true if an element has any attributes, otherwise false
-* ```hasAttributeNS()``` — Provides a true/false value indicating whether the current element in a given namespace has the specified attribute
-* ```removeAttribute()``` — Removes a specified attribute from an element
-* ```removeAttributeNS()``` — Removes the specified attribute from an element within a certain namespace
-* ```removeAttributeNode()``` — Takes away a specified attribute node and returns the removed node
-* ```setAttribute()``` — Sets or changes the specified attribute to a specified value
-* ```setAttributeNS()``` —  Adds a new attribute or changes the value of an attribute with the given namespace and name
-* ```setAttributeNode()``` — Sets or changes the specified attribute node
-* ```setAttributeNodeNS()``` — Adds a new namespaced attribute node to an element
 
 # Working with the User Browser
 Besides HTML elements, JavaScript is also able to take into account the user browser and incorporate its properties into the code.
