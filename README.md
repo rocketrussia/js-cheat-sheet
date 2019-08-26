@@ -3,6 +3,7 @@
 https://websitesetup.org/javascript-cheat-sheet/
 
 Возможно в будущем будет корректироваться и дополняться информацией, не представленной по ссылке выше.
+Также стоит отметить, что некоторые устаревшие функции убраны из шпаргалки. Подробности: [MDN](https://developer.mozilla.org/ru/docs/Web "MDN web docs")
 
 # Основы JavaScript
 Начнем с простых вещей - как подключить JavaScript к веб-сайту
@@ -372,71 +373,69 @@ Node это интерфейс, от которого наследуют нес�
 * ```setAttributeNode()``` - Устанавливает или изменяет указанный атрибут узла
 * ```setAttributeNodeNS()``` - Добавляет новый узел атрибута пространства имен к элементу
 
+# Работа с браузером пользователя
+Помимо элементов HTML, JavaScript также может учитывать браузер пользователя и включать его свойства в код.
+
+## Window свойства
+* ```closed``` — Проверяет, было ли окно закрыто или нет, и возвращает true или false
+* ```defaultStatus``` — Устанавливает или возвращает текст по умолчанию в строке состояния окна
+* ```document``` — Возвращает объект документа для окна
+* ```frames``` —  Возвращает все элементы iframe в текущем окне
+* ```history``` — Предоставляет объект History для окна
+* ```innerHeight``` — Внутренняя высота контента данного окна
+* ```innerWidth``` — Внутренняя ширина контента данного окна
+* ```length``` — Количество элементов iframe в окне
+* ```location``` — Возвращает местоположение объекта для данного окна
+* ```name``` — Устанавливает или возвращает имя окна
+* ```navigator``` — Возвращает объект Navigator для окна
+* ```opener``` — Возвращает ссылку на новое окно, которая была создано в первоначальном окне(при использовании метода open())
+* ```outerHeight``` — Внешняя высота окна, включая панели инструментов / полосы прокрутки
+* ```outerWidth``` — Внешняя ширина окна, включая панели инструментов / полосы прокрутки
+* ```pageXOffset``` — Количество пикселей, по которому текущий документ прокручивается по горизонтали
+* ```pageYOffset``` — Количество пикселей, по которому текущий документ прокручивается по вертикали
+* ```parent``` — Родительское окно текущего окна
+* ```screen``` — Возвращает объект Screen для окна
+* ```screenX``` — Горизонтальная координата окна
+* ```screenY``` — Вертикальная координата окна
+* ```self``` — Возвращает текущее окно
+* ```status``` — Устанавливает или возвращает текст в строке состояния окна
+* ```top``` — Возвращает ссылку на корневое окно в иерархии окон
+    
+## Window методы
+* ```alert()``` — показывает диалоговое окно с опциональным сообщением и кнопкой OK.
+* ```blur()``` — Убирает фокус с окна
+* ```clearInterval()``` — Сбрасывает таймер, установленный с помощью setInterval ()
+* ```clearTimeout()``` — Сбрасывает таймер, установленный с помощью setTimeout()
+* ```close()``` — Закрывает текущее окно
+* ```confirm()``` — Отображает диалоговое окно с сообщением и кнопкой ОК и Отмена
+* ```focus()``` — Устанавливает фокус на текущее окно
+* ```moveBy()``` — Перемещает окно относительно его текущей позиции
+* ```moveTo()``` — Перемещает окно в указанную позицию
+* ```open()``` — Открывает новое окно браузера
+* ```print()``` — Печатает содержимое текущего окна
+* ```prompt()``` — Отображает диалоговое окно, которое предлагает посетителю для ввода
+* ```resizeBy()``` — Изменяет размер окна на указанное количество пикселей
+* ```resizeTo()``` — Изменение размера окна до указанной ширины и высоты
+* ```scrollBy()``` — Прокручивает документ на указанное количество пикселей
+* ```scrollTo()``` — Прокручивает документ до указанных координат
+* ```setInterval()``` — Вызывает функцию или оценивает выражение через заданные интервалы
+* ```setTimeout()``` — Вызывает функцию или вычисляет выражение после указанного интервала
+* ```stop()``` — Останавливает окно загрузки
+
+## Свойства экрана
+* ```availHeight``` — Высота, которую может иметь окно браузера, если она максимизирована, включая полосы браузера
+* ```availWidth``` — Ширина, которую может иметь окно браузера, если она максимизирована, включая полосы браузера
+* ```colorDepth``` — Возвращает битовую глубину цветовой палитры для отображения изображений
+* ```height``` — Общая высота экрана
+* ```pixelDepth``` — Цветовое разрешение экрана в битах на пиксель
+* ```width``` — Общая ширина экрана
+
 # Внимание
 Информация следующая далее находится в процессе перевода на русский язык
 
 ```
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 ```
-
-# Working with the User Browser
-Besides HTML elements, JavaScript is also able to take into account the user browser and incorporate its properties into the code.
-
-## Window Properties
-* ```closed``` — Checks whether a window has been closed or not and returns true or false
-* ```defaultStatus``` — Sets or returns the default text in the status bar of a window
-* ```document``` — Returns the document object for the window
-* ```frames``` — Returns all iframe elements in the current window
-* ```history``` — Provides the History object for the window
-* ```innerHeight``` — The inner height of a window’s content area
-* ```innerWidth``` — The inner width of the content area
-* ```length``` — Find out the number of  iframe elements in the window
-* ```location``` — Returns the location object for the window
-* ```name``` — Sets or returns the name of a window
-* ```navigator``` — Returns the Navigator object for the window
-* ```opener``` — Returns a reference to the window that created the window
-* ```outerHeight``` — The outer height of a window, including toolbars/scrollbars
-* ```outerWidth``` — The outer width of a window, including toolbars/scrollbars
-* ```pageXOffset``` — Number of pixels the current document has been scrolled horizontally
-* ```pageYOffset``` — Number of pixels the document has been scrolled vertically
-* ```parent``` — The parent window of the current window
-* ```screen``` — Returns the Screen object for the window
-* ```screenLeft``` — The horizontal coordinate of the window (relative to the screen)
-* ```screenTop``` — The vertical coordinate of the window
-* ```screenX``` — Same as screenLeft but needed for some browsers
-* ```screenY``` — Same as screenTop but needed for some browsers
-* ```self``` — Returns the current window
-* ```status``` — Sets or returns the text in the status bar of a window
-* ```top``` — Returns the topmost browser window
-    
-## Window Methods
-* ```alert()``` — Displays an alert box with a message and an OK button
-* ```blur()``` — Removes focus from the current window
-* ```clearInterval()``` — Clears a timer set with setInterval()
-* ```clearTimeout()``` — Clears a timer set with setTimeout()
-* ```close()``` — Closes the current window
-* ```confirm()``` — Displays a dialogue box with a message and an OK and Cancel button
-* ```focus()``` — Sets focus to the current window
-* ```moveBy()``` — Moves a window relative to its current position
-* ```moveTo()``` — Moves a window to a specified position
-* ```open()``` — Opens a new browser window
-* ```print()``` — Prints the content of the current window
-* ```prompt()``` — Displays a dialogue box that prompts the visitor for input
-* ```resizeBy()``` — Resizes the window by the specified number of pixels
-* ```resizeTo()``` — Resizes the window to a specified width and height
-* ```scrollBy()``` — Scrolls the document by a specified number of pixels
-* ```scrollTo()``` — Scrolls the document to specified coordinates
-* ```setInterval()``` — Calls a function or evaluates an expression at specified intervals
-* ```setTimeout()``` — Calls a function or evaluates an expression after a specified interval
-* ```stop()``` — Stops the window from loading
-
-## Screen Properties
-* ```availHeight``` — Returns the height of the screen (excluding the Windows Taskbar)
-* ```availWidth``` — Returns the width of the screen (excluding the Windows Taskbar)
-* ```colorDepth``` — Returns the bit depth of the color palette for displaying images
-* ```height``` — The total height of the screen
-* ```pixelDepth``` — The color resolution of the screen in bits per pixel
-* ```width``` — The total width of the screen
 
 # JavaScript Events
 Events are things that can happen to HTML elements and are performed by the user. The programming language can listen for these events and trigger actions in the code. No JavaScript cheat sheet would be complete without them.
