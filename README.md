@@ -430,17 +430,10 @@ Node это интерфейс, от которого наследуют нес�
 * ```pixelDepth``` — Цветовое разрешение экрана в битах на пиксель
 * ```width``` — Общая ширина экрана
 
-# Внимание
-Информация следующая далее находится в процессе перевода на русский язык
+# События JavaScript
+События могут происходить с элементами HTML и выполняются пользователем. Язык программирования может прослушивать эти события и запускать действия в коде. Чит-лист JavaScript не будет полным без них.
 
-```
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-```
-
-# JavaScript Events
-Events are things that can happen to HTML elements and are performed by the user. The programming language can listen for these events and trigger actions in the code. No JavaScript cheat sheet would be complete without them.
-
-## Mouse
+## Мышь
 * ```onclick``` — The event occurs when the user clicks on an element
 * ```oncontextmenu``` — User right-clicks on an element to open a context menu
 * ```ondblclick``` — The user double-clicks on an element
@@ -452,7 +445,7 @@ Events are things that can happen to HTML elements and are performed by the user
 * ```onmouseout``` — User moves the mouse pointer out of an element or one of its children
 * ```onmouseup``` — The user releases a mouse button while over an element
 
-##Keyboard
+## Клавиатура
 * ```onkeydown``` — When the user is pressing a key down
 * ```onkeypress``` — The moment the user starts pressing a key
 * ```onkeyup``` — The user releases a key
@@ -469,7 +462,7 @@ Events are things that can happen to HTML elements and are performed by the user
 * ```onscroll``` — An element’s scrollbar is being scrolled
 * ```onunload``` — Event occurs when a page has unloaded
 
-## Form
+## Форма
 * ```onblur``` — When an element loses focus
 * ```onchange``` — The content of a form element changes (for input, select and textarea)
 * ```onfocus``` — An element gets focus
@@ -482,7 +475,7 @@ Events are things that can happen to HTML elements and are performed by the user
 * ```onselect``` — The user selects some text (for input and textarea)
 * ```onsubmit``` — A form is submitted
     
-## Drag
+## Перетаскивание
 * ```ondrag``` — An element is dragged
 * ```ondragend``` — The user has finished dragging the element
 * ```ondragenter``` — The dragged element enters a drop target
@@ -491,12 +484,12 @@ Events are things that can happen to HTML elements and are performed by the user
 * ```ondragstart``` — User starts to drag an element
 * ```ondrop``` — Dragged element is dropped on the drop target
 
-## Clipboard
-* ```oncopy``` — User copies the content of an element
-* ```oncut``` — The user cuts an element’s content
-* ```onpaste``` — A user pastes content in an element
+## Буфер обмена
+* ```oncopy``` — Пользователь копирует содержимое элемента
+* ```oncut``` — Пользователь вырезает содержимое элемента
+* ```onpaste``` — Пользователь вставляет содержимое в элемент
 
-## Media
+## Медиа
 * ```onabort``` — Media loading is aborted
 * ```oncanplay``` — The browser can start playing media (e.g. a file has buffered enough)
 * ```oncanplaythrough``` — The browser can play through media without stopping
@@ -519,12 +512,12 @@ Events are things that can happen to HTML elements and are performed by the user
 * ```onvolumechange``` — Media volume has changed (including mute)
 * ```onwaiting``` — Media paused but expected to resume (for example, buffering)
 
-## Animation
+## Анимации
 * ```animationend``` — A CSS animation is complete
 * ```animationiteration``` — CSS animation is repeated
 * ```animationstart``` — CSS animation has started
 
-## Other
+## Прочее
 * ```transitionend``` — Fired when a CSS transition has completed
 * ```onmessage``` — A message is received through the event source
 * ```onoffline``` — The browser starts to work offline
@@ -539,16 +532,16 @@ Events are things that can happen to HTML elements and are performed by the user
 * ```ontouchmove``` — A finger is dragged across the screen
 * ```ontouchstart``` — A finger is placed on the touch-screen
     
-# Errors
-When working with JavaScript, different errors can occur. There are several ways of handling them:
+# Ошибки
+При работе с JavaScript могут возникать разные ошибки. Есть несколько способов справиться с ними:
 
 * ```try``` — Lets you define a block of code to test for errors
 * ```catch``` — Set up a block of code to execute in case of an error
 * ```throw``` — Create custom error messages instead of the standard JavaScript errors
 * ```finally``` — Lets you execute code, after try and catch, regardless of the result
 
-## Error Name Values
-JavaScript also has a built-in error object. It has two properties:
+## Значение ошибок
+JavaScript также имеет встроенный инструмент(объект) для выведения ошибки. У него есть два свойства:
 
 * ```name``` — Sets or returns the error name
 * ```message``` — Sets or returns an error message in string from
