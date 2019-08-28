@@ -463,17 +463,17 @@ Node это интерфейс, от которого наследуют нес�
 * ```onunload``` — Когда страница не загрузилась по каким-либо причинам, либо при закрытии окна (вкладки) браузера.
 
 ## Форма
-* ```onblur``` — When an element loses focus
-* ```onchange``` — The content of a form element changes (for input, select and textarea)
-* ```onfocus``` — An element gets focus
-* ```onfocusin``` — When an element is about to get focus
-* ```onfocusout``` — The element is about to lose focus
-* ```oninput``` — User input on an element
-* ```oninvalid``` — An element is invalid
-* ```onreset``` — A form is reset
-* ```onsearch``` — The user writes something in a search field (for input="search")
-* ```onselect``` — The user selects some text (for input and textarea)
-* ```onsubmit``` — A form is submitted
+* ```onblur``` — Когда элемент теряет фокус
+* ```onchange``` — Изменяется содержимое элемента формы (для input, select и textarea)
+* ```onfocus``` — Элемент в фокусе
+* ```onfocusin``` — Когда элемент собирается получить фокус
+* ```onfocusout``` — Элемент собирается потерять фокус
+* ```oninput``` — Пользовательский ввод
+* ```oninvalid``` — Элемент невалиден
+* ```onreset``` — Сброс формы
+* ```onsearch``` — Пользователь что-то пишет в поле поиска (для input="search")
+* ```onselect``` — Пользователь выбирает некоторый текст (для input и textarea)
+* ```onsubmit``` — Форма отправлена
     
 ## Перетаскивание
 * ```ondrag``` — Элемент перетаскивается
@@ -490,27 +490,27 @@ Node это интерфейс, от которого наследуют нес�
 * ```onpaste``` — Пользователь вставляет содержимое в элемент
 
 ## Медиа
-* ```onabort``` — Media loading is aborted
-* ```oncanplay``` — The browser can start playing media (e.g. a file has buffered enough)
-* ```oncanplaythrough``` — The browser can play through media without stopping
-* ```ondurationchange``` — The duration of the media changes
-* ```onended``` — The media has reached its end
-* ```onerror``` — Happens when an error occurs while loading an external file
-* ```onloadeddata``` — Media data is loaded
-* ```onloadedmetadata``` — Metadata (like dimensions and duration) are loaded
-* ```onloadstart``` —  The browser starts looking for specified media
-* ```onpause``` — Media is paused either by the user or automatically
-* ```onplay``` — The media has been started or is no longer paused
-* ```onplaying``` — Media is playing after having been paused or stopped for buffering
-* ```onprogress``` — The browser is in the process of downloading the media
-* ```onratechange``` — The playing speed of the media changes
-* ```onseeked``` — User is finished moving/skipping to a new position in the media
-* ```onseeking``` — The user starts moving/skipping
-* ```onstalled``` — The browser is trying to load the media but it is not available
-* ```onsuspend``` — The browser is intentionally not loading media
-* ```ontimeupdate``` — The playing position has changed (e.g. because of fast forward)
-* ```onvolumechange``` — Media volume has changed (including mute)
-* ```onwaiting``` — Media paused but expected to resume (for example, buffering)
+* ```onabort``` — Загрузка медиа-фаила прервана
+* ```oncanplay``` — Браузер может начать воспроизведение медиа-фаила (например, файл достаточно буферизован)
+* ```oncanplaythrough``` — Браузер может воспроизводить медиа-файлы без остановки
+* ```ondurationchange``` — Продолжительность воспроизведения медиа-фаила изменена
+* ```onended``` — Достигнут конец медиа-фаила при воспроизведении
+* ```onerror``` — Когда при загрузке внешнего файла возникает ошибка
+* ```onloadeddata``` — Медиа данные загружены
+* ```onloadedmetadata``` — Метаданные (например, размеры и продолжительность) загружаются
+* ```onloadstart``` —  Браузер начинает поиск указанного медиа-фаила
+* ```onpause``` — Воспроизведение медиа-фаила приостанавливается либо пользователем, либо автоматически
+* ```onplay``` — Медиа-фаил запущен или больше не приостановлен
+* ```onplaying``` — Медиа-фаил воспроизводится после того, как была приостановлена или остановлена для буферизации
+* ```onprogress``` — Браузер в процессе загрузки медиа-фаила
+* ```onratechange``` — Скорость воспроизведения медиа изменена
+* ```onseeked``` — Когда операция поиска завершена, текущая позиция воспроизведения изменилась
+* ```onseeking``` — Пользователь начинает движение / скипает
+* ```onstalled``` —  Браузер пытается загрузить медиа-фаил, но он недоступен
+* ```onsuspend``` — Браузер намеренно не загружает медиа-фаил
+* ```ontimeupdate``` — Проигроваемая позиция изменилась (например, из-за ускоренной перемотки вперед)
+* ```onvolumechange``` — Громкость медиа-фаила изменилась (включая отключение звука)
+* ```onwaiting``` — Воспроизведение медиа-фаила приостановлено, но ожидается возобновление (например, буферизация)
 
 ## Анимации
 * ```animationstart``` — CSS анимация началась
@@ -518,19 +518,19 @@ Node это интерфейс, от которого наследуют нес�
 * ```animationend``` — CSS анимация завершена
 
 ## Прочее
-* ```transitionend``` — Fired when a CSS transition has completed
-* ```onmessage``` — A message is received through the event source
-* ```onoffline``` — The browser starts to work offline
-* ```ononline``` — The browser starts to work online
-* ```onpopstate``` — When the window’s history changes
-* ```onshow``` — A menu element is shown as a context menu
-* ```onstorage``` — A Web Storage area is updated
-* ```ontoggle``` — The user opens or closes the details element
-* ```onwheel``` — Mouse wheel rolls up or down over an element
-* ```ontouchcancel``` — Screen-touch is interrupted
-* ```ontouchend``` — User’s finger is removed from a touch-screen
-* ```ontouchmove``` — A finger is dragged across the screen
-* ```ontouchstart``` — A finger is placed on the touch-screen
+* ```transitionend``` — Срабатывает после завершения CSS-перехода
+* ```onmessage``` — Сообщение получено через источник события
+* ```onoffline``` — Браузер начинает работать в автономном режиме
+* ```ononline``` — Браузер начинает работать в онлайн режиме
+* ```onpopstate``` — При изменении истории окна
+* ```onshow``` — Элемент меню отображается в виде контекстного меню
+* ```onstorage``` — Область веб-хранилища обновлена
+* ```ontoggle``` — Пользователь открывает или закрывает элемент данных
+* ```onwheel``` — Колесо мыши катится вверх или вниз по элементу
+* ```ontouchcancel``` — Сенсорный экран прерывается
+* ```ontouchend``` — Палец пользователя убран с сенсорного экрана
+* ```ontouchmove``` — Палец передвигается по экрану
+* ```ontouchstart``` — Палец коснулся сенсорного экрана
     
 # Ошибки
 При работе с JavaScript могут возникать разные ошибки. Есть несколько способов справиться с ними:
