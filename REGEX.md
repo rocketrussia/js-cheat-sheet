@@ -1,7 +1,5 @@
 # Синтаксис регулярных выражений
-Извините, но перевод будет чуть позже
-
-Regular expressions are search patterns used to match character combinations in strings. The search pattern can be used for text search and text replace operations.
+Регулярные выражения - это шаблоны поиска, используемые для сопоставления комбинаций символов в строках. Шаблон поиска можно использовать для операций поиска текста и замены текста.
 
 ## Модификаторы
 * ```e``` — Evaluate replacement
